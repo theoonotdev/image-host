@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Host</title>
+  <meta name="description" content="Simple image hosting">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="brand">
+        <div class="logo">IMG</div>
+        <div>
+          <h1>Image Host</h1>
+          <p>Upload gambar dan dapatkan direct URL.</p>
+        </div>
+      </div>
+
+      <label class="dropzone" id="dropzone" for="file">
+        <input id="file" type="file" accept="image/jpeg,image/png,image/webp,image/gif">
+        <strong id="dropTitle">Pilih gambar</strong>
+        <span id="dropText">atau drag & drop ke sini</span>
+        <small>JPG, PNG, WebP, GIF • maksimal 10 MB</small>
+      </label>
+
+      <button id="uploadBtn" disabled>Upload</button>
+
+      <div id="status" class="status hidden"></div>
+
+      <div id="result" class="result hidden">
+        <img id="preview" alt="Uploaded image">
+        <div class="url-row">
+          <input id="url" readonly>
+          <button id="copyBtn" class="secondary">Copy</button>
+        </div>
+        <a id="openBtn" class="open" target="_blank" rel="noopener">Buka gambar</a>
+      </div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

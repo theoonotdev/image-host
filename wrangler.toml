@@ -1,0 +1,10 @@
+name = "image-host"
+compatibility_date = "2026-10-03"
+pages_build_output_dir = "./public"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "image-host"
+
+[vars]
+PUBLIC_IMAGE_URL = "https://img.example.com"
